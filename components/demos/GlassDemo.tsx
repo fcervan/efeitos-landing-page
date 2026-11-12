@@ -5,13 +5,13 @@ import { ActionButton, DemoLayout, PanelTitle, Readout, SelectRow, Slider, Stage
 
 const BACKGROUNDS: Record<string, string> = {
   aurora:
-    "radial-gradient(circle at 20% 25%, #FF5A0A 0%, transparent 55%), radial-gradient(circle at 78% 30%, #FF2D8A 0%, transparent 52%), radial-gradient(circle at 50% 85%, #1F6BFF 0%, transparent 55%), #0B0B0F",
+    "radial-gradient(circle at 20% 25%, #2B4EFF 0%, transparent 55%), radial-gradient(circle at 78% 30%, #E11D74 0%, transparent 52%), radial-gradient(circle at 50% 85%, #2563EB 0%, transparent 55%), #070B14",
   foto:
-    "linear-gradient(140deg, #1F6BFF 0%, #7C3AED 38%, #FF2D8A 68%, #FFB020 100%)",
+    "linear-gradient(140deg, #2563EB 0%, #7C3AED 38%, #E11D74 68%, #F59E0B 100%)",
   claro:
-    "radial-gradient(circle at 25% 20%, #FFB020 0%, transparent 55%), radial-gradient(circle at 80% 70%, #B9E824 0%, transparent 50%), #FFF5EE",
+    "radial-gradient(circle at 25% 20%, #F59E0B 0%, transparent 55%), radial-gradient(circle at 80% 70%, #B9E824 0%, transparent 50%), #F3F6FF",
   xadrez:
-    "repeating-conic-gradient(#111111 0% 25%, #F7F7F8 0% 50%) 0 0 / 44px 44px",
+    "repeating-conic-gradient(#0E1116 0% 25%, #F5F6F8 0% 50%) 0 0 / 44px 44px",
 };
 
 const CARDS = [

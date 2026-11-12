@@ -78,10 +78,10 @@ export default function TiltDemo() {
                 </p>
                 <p className="mt-3 text-[20px] font-extrabold leading-tight">
                   Profundidade sem<br />
-                  <span className="text-tangerine">WebGL</span>
+                  <span className="text-accent">WebGL</span>
                 </p>
                 <div className="mt-4 flex gap-1.5" aria-hidden="true">
-                  {["#FF5A0A", "#FF2D8A", "#1F6BFF", "#B9E824"].map((color) => (
+                  {["#2B4EFF", "#E11D74", "#2563EB", "#B9E824"].map((color) => (
                     <span key={color} className="h-1.5 flex-1 rounded-pill" style={{ background: color }} />
                   ))}
                 </div>
@@ -98,7 +98,7 @@ export default function TiltDemo() {
                 className={`absolute bottom-4 left-2 h-16 w-16 rounded-full ${glow ? "shadow-glow" : "shadow-card"}`}
                 style={{
                   transform: `translateZ(${z(160)})`,
-                  background: "radial-gradient(circle at 32% 28%, #FFC9A8, #FF5A0A 48%, #E64A00 80%)",
+                  background: "radial-gradient(circle at 32% 28%, #C9D4FF, #2B4EFF 48%, #1D3ACC 80%)",
                 }}
                 aria-hidden="true"
               />

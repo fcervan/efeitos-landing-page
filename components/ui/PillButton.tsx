@@ -24,8 +24,8 @@ type Props = {
 };
 
 const VARIANTS: Record<Variant, string> = {
-  solid: "bg-tangerine text-white shadow-cta hover:bg-tangerine-dark",
-  outline: "border border-ink/15 bg-white text-ink hover:border-tangerine/60",
+  solid: "bg-accent text-white shadow-cta hover:bg-accent-dark",
+  outline: "border border-ink/15 bg-white text-ink hover:border-accent/60",
   dark: "bg-ink text-white hover:bg-carbon",
   ghost: "bg-white/10 text-white border border-white/25 hover:bg-white/20",
 };

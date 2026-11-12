@@ -65,8 +65,8 @@ const CARDS: Card[] = [
 
 const BARS = [
   { label: "leve", value: 34, color: "#B9E824", note: "CSS + transform" },
-  { label: "médio", value: 62, color: "#FFB020", note: "blur / scroll" },
-  { label: "pesado", value: 100, color: "#FF2D8A", note: "WebGL + runtime" },
+  { label: "médio", value: 62, color: "#F59E0B", note: "blur / scroll" },
+  { label: "pesado", value: 100, color: "#E11D74", note: "WebGL + runtime" },
 ];
 
 function Visual({ kind }: { kind: Card["kind"] }) {
@@ -103,7 +103,7 @@ function Visual({ kind }: { kind: Card["kind"] }) {
   if (kind === "prompt") {
     return (
       <div className="mt-6 rounded-2xl border border-line bg-mist p-3.5 font-mono text-[11.5px] leading-relaxed text-body">
-        <span className="text-tangerine-dark">›</span> crie um tilt 3D em CSS com perspective +
+        <span className="text-accent-dark">›</span> crie um tilt 3D em CSS com perspective +
         preserve-3d e camadas em translateZ…
         <span className="mt-3 flex items-center gap-2 text-[10px] uppercase tracking-[0.14em] text-success">
           <span className="h-1.5 w-1.5 rounded-full bg-success" aria-hidden="true" />
@@ -179,7 +179,7 @@ export default function Bento() {
           slug="bento-grid"
           title={
             <>
-              Seis motivos para <span className="text-tangerine">copiar</span> em vez de reinventar.
+              Seis motivos para <span className="text-accent">copiar</span> em vez de reinventar.
             </>
           }
           lead="O laboratório não é uma galeria bonita: é uma ferramenta de decisão. Cada bloco abaixo existe para responder uma pergunta que você faz antes de pedir o efeito."
@@ -193,7 +193,7 @@ export default function Bento() {
                 className={`group relative flex h-full flex-col overflow-hidden rounded-card border p-6 shadow-card transition-colors duration-500 sm:p-7 ${
                   card.dark
                     ? "on-dark border-smoke bg-night text-white"
-                    : "border-line bg-white hover:border-tangerine/40"
+                    : "border-line bg-white hover:border-accent/40"
                 }`}
                 whileHover={reduce ? undefined : { y: -4 }}
                 whileTap={reduce ? undefined : { y: -1 }}
@@ -202,7 +202,7 @@ export default function Bento() {
               >
                 {card.dark ? (
                   <span
-                    className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-tangerine/25 blur-[70px]"
+                    className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-accent/25 blur-[70px]"
                     aria-hidden="true"
                   />
                 ) : null}
@@ -224,7 +224,7 @@ export default function Bento() {
                   </div>
                   <span
                     className={`mt-6 inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.14em] ${
-                      card.dark ? "text-tangerine-light" : "text-tangerine-dark"
+                      card.dark ? "text-accent-light" : "text-accent-dark"
                     }`}
                   >
                     abrir efeito

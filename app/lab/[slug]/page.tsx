@@ -51,7 +51,7 @@ export default function EffectPage({ params }: Params) {
           <nav aria-label="Trilha">
             <ol className="flex flex-wrap items-center gap-2 font-mono text-[11px] uppercase tracking-[0.14em] text-body">
               <li>
-                <Link href="/lab" className="transition-colors hover:text-tangerine-dark">
+                <Link href="/lab" className="transition-colors hover:text-accent-dark">
                   Laboratório
                 </Link>
               </li>
@@ -63,7 +63,7 @@ export default function EffectPage({ params }: Params) {
           </nav>
           <Link
             href="/lab"
-            className="group inline-flex items-center gap-2 rounded-pill border border-line bg-white px-4 py-2 text-[13px] font-semibold text-ink transition-colors duration-300 hover:border-tangerine/50 hover:text-tangerine-dark"
+            className="group inline-flex items-center gap-2 rounded-pill border border-line bg-white px-4 py-2 text-[13px] font-semibold text-ink transition-colors duration-300 hover:border-accent/50 hover:text-accent-dark"
           >
             <span className="transition-transform duration-500 ease-out group-hover:-translate-x-1" aria-hidden="true">
               ←
@@ -74,7 +74,7 @@ export default function EffectPage({ params }: Params) {
 
         <header className="mt-8 max-w-3xl">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="badge border-tangerine/30 bg-tangerine-tint text-tangerine-dark">
+            <span className="badge border-accent/30 bg-accent-tint text-accent-dark">
               {effect.code}
             </span>
             <span className="badge border-electric/25 bg-electric/10 text-electric">
@@ -95,7 +95,7 @@ export default function EffectPage({ params }: Params) {
           {blocks.map((block, index) => (
             <article key={block.title} className="rounded-card border border-line bg-white p-6 shadow-card">
               <h2 className="flex items-center gap-2 text-[17px] font-bold text-ink">
-                <span className="text-tangerine" aria-hidden="true">
+                <span className="text-accent" aria-hidden="true">
                   {BLOCK_ICONS[index]}
                 </span>
                 {block.title}
@@ -107,7 +107,7 @@ export default function EffectPage({ params }: Params) {
                 <ul className="mt-4 space-y-2.5">
                   {block.list.map((item) => (
                     <li key={item} className="flex gap-3 text-[14px] leading-relaxed text-body">
-                      <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-tangerine" aria-hidden="true" />
+                      <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden="true" />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -164,7 +164,7 @@ export default function EffectPage({ params }: Params) {
         <nav aria-label="Outros efeitos" className="mt-12 grid gap-3 sm:grid-cols-2">
           <Link
             href={`/lab/${prev.slug}`}
-            className="group rounded-card border border-line bg-white p-5 transition-colors duration-300 hover:border-tangerine/40"
+            className="group rounded-card border border-line bg-white p-5 transition-colors duration-300 hover:border-accent/40"
           >
             <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-body">
               ← anterior · {prev.code}
@@ -173,7 +173,7 @@ export default function EffectPage({ params }: Params) {
           </Link>
           <Link
             href={`/lab/${next.slug}`}
-            className="group rounded-card border border-line bg-white p-5 text-right transition-colors duration-300 hover:border-tangerine/40"
+            className="group rounded-card border border-line bg-white p-5 text-right transition-colors duration-300 hover:border-accent/40"
           >
             <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-body">
               próximo · {next.code} →

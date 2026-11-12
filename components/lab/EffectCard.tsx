@@ -26,7 +26,7 @@ export default function EffectCard({ effect, span = 4 }: Props) {
   return (
     <Link
       href={`/lab/${effect.slug}`}
-      className={`group relative flex h-full flex-col overflow-hidden rounded-card border border-line bg-white shadow-card transition-[transform,box-shadow,border-color] duration-500 ease-out hover:-translate-y-1 hover:border-tangerine/40 hover:shadow-lift focus-visible:-translate-y-1 ${
+      className={`group relative flex h-full flex-col overflow-hidden rounded-card border border-line bg-white shadow-card transition-[transform,box-shadow,border-color] duration-500 ease-out hover:-translate-y-1 hover:border-accent/40 hover:shadow-lift focus-visible:-translate-y-1 ${
         SPAN[span] ?? SPAN[4]
       } ${wide ? "sm:col-span-2" : "sm:col-span-1"}`}
       aria-label={`${effect.code} ${effect.name}, custo ${effect.cost}. Abrir demo isolada.`}
@@ -42,7 +42,7 @@ export default function EffectCard({ effect, span = 4 }: Props) {
 
       <div className="flex flex-1 flex-col p-5">
         <div className="flex items-center justify-between gap-3">
-          <span className="font-mono text-[11px] font-bold uppercase tracking-[0.16em] text-tangerine-dark">
+          <span className="font-mono text-[11px] font-bold uppercase tracking-[0.16em] text-accent-dark">
             {effect.code} · {CATEGORY_LABEL[effect.category]}
           </span>
           <CostBadge cost={effect.cost} />

@@ -9,7 +9,7 @@ export default function NotFound() {
           <span aria-hidden="true">◍</span> erro 404
         </p>
         <h1 className="h1 mt-5 max-w-[16ch]">
-          Esse efeito não está no <span className="text-tangerine">catálogo</span>.
+          Esse efeito não está no <span className="text-accent">catálogo</span>.
         </h1>
         <p className="lead mt-5 max-w-xl">
           O laboratório tem {EFFECTS.length} efeitos e cada um tem endereço próprio. Volte ao índice
@@ -18,13 +18,13 @@ export default function NotFound() {
         <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
           <Link
             href="/lab"
-            className="rounded-pill bg-tangerine px-6 py-3 text-[15px] font-bold text-white shadow-cta transition-colors duration-300 hover:bg-tangerine-dark"
+            className="rounded-pill bg-accent px-6 py-3 text-[15px] font-bold text-white shadow-cta transition-colors duration-300 hover:bg-accent-dark"
           >
             Ver o índice de efeitos
           </Link>
           <Link
             href="/"
-            className="rounded-pill border border-ink/15 bg-white px-6 py-3 text-[15px] font-bold text-ink transition-colors duration-300 hover:border-tangerine/60"
+            className="rounded-pill border border-ink/15 bg-white px-6 py-3 text-[15px] font-bold text-ink transition-colors duration-300 hover:border-accent/60"
           >
             Voltar para a home
           </Link>

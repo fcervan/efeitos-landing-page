@@ -89,7 +89,7 @@ export default function CopyPrompt({ text, title = "Prompt para colar na sua LLM
           ? "bg-success text-white"
           : status === "error"
             ? "bg-warning text-ink"
-            : "bg-tangerine text-white hover:bg-tangerine-dark"
+            : "bg-accent text-white hover:bg-accent-dark"
       }`}
       whileTap={reduce ? undefined : { scale: 0.96 }}
       whileHover={reduce ? undefined : { scale: 1.03 }}
@@ -140,7 +140,7 @@ export default function CopyPrompt({ text, title = "Prompt para colar na sua LLM
     <div className="overflow-hidden rounded-card border border-smoke bg-night">
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-smoke px-5 py-4">
         <div>
-          <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-tangerine-light">
+          <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-accent-light">
             {title}
           </p>
           <p className="mt-1 text-[13px] text-white/50" role="status" aria-live="polite">

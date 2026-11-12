@@ -62,7 +62,7 @@ export default function KineticTypeDemo() {
               {WORDS.map((word, index) => (
                 <span key={`${word}-${index}`} className="mask-word">
                   <motion.span
-                    className={`inline-block ${index === accent ? "text-tangerine" : "text-white"}`}
+                    className={`inline-block ${index === accent ? "text-accent" : "text-white"}`}
                     initial={reduce ? false : { y: "110%" }}
                     animate={{ y: "0%" }}
                     transition={{ duration, ease: EASE_OUT, delay: reduce ? 0 : 0.1 + index * stagger }}

@@ -9,7 +9,7 @@ function HeavyFallback({ label }: { label: string }) {
         <div
           className="mx-auto h-24 w-24 rounded-full"
           style={{
-            background: "radial-gradient(circle at 32% 30%, #FFB08A, #FF5A0A 45%, #7C3AED 90%)",
+            background: "radial-gradient(circle at 32% 30%, #9DB0FF, #2B4EFF 45%, #7C3AED 90%)",
           }}
           aria-hidden="true"
         />

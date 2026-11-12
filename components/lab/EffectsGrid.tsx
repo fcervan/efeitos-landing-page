@@ -260,7 +260,7 @@ export default function EffectsGrid({ effects }: { effects: Effect[] }) {
                   syncUrl({ query: event.target.value });
                 }}
                 placeholder="Buscar: tilt, gsap, A5…"
-                className="w-full rounded-pill border border-line bg-mist py-2.5 pl-11 pr-4 text-[14px] text-ink placeholder:text-body/70 focus:border-tangerine/50 focus:bg-white"
+                className="w-full rounded-pill border border-line bg-mist py-2.5 pl-11 pr-4 text-[14px] text-ink placeholder:text-body/70 focus:border-accent/50 focus:bg-white"
               />
             </div>
 
@@ -276,7 +276,7 @@ export default function EffectsGrid({ effects }: { effects: Effect[] }) {
                   setOrder(next);
                   syncUrl({ order: next });
                 }}
-                className="rounded-pill border border-line bg-mist px-4 py-2.5 text-[13px] font-semibold text-ink focus:border-tangerine/50 focus:bg-white"
+                className="rounded-pill border border-line bg-mist px-4 py-2.5 text-[13px] font-semibold text-ink focus:border-accent/50 focus:bg-white"
               >
                 {ORDERS.map((item) => (
                   <option key={item.id} value={item.id}>
@@ -302,7 +302,7 @@ export default function EffectsGrid({ effects }: { effects: Effect[] }) {
           <button
             type="button"
             onClick={reset}
-            className="rounded-pill border border-line bg-white px-4 py-2 text-[13px] font-semibold text-ink transition-colors duration-300 hover:border-tangerine/50 hover:text-tangerine-dark"
+            className="rounded-pill border border-line bg-white px-4 py-2 text-[13px] font-semibold text-ink transition-colors duration-300 hover:border-accent/50 hover:text-accent-dark"
           >
             Limpar filtros
           </button>
@@ -325,7 +325,7 @@ export default function EffectsGrid({ effects }: { effects: Effect[] }) {
           <button
             type="button"
             onClick={reset}
-            className="mt-6 rounded-pill bg-tangerine px-5 py-2.5 text-sm font-bold text-white shadow-cta transition-colors duration-300 hover:bg-tangerine-dark"
+            className="mt-6 rounded-pill bg-accent px-5 py-2.5 text-sm font-bold text-white shadow-cta transition-colors duration-300 hover:bg-accent-dark"
           >
             Mostrar todos os {effects.length}
           </button>

@@ -4,10 +4,10 @@ import { useState } from "react";
 import { ActionButton, DemoLayout, PanelTitle, Readout, SelectRow, Slider, Stage, Toggle } from "./DemoKit";
 
 const PALETTES: Record<string, string[]> = {
-  tangerina: ["#FF5A0A", "#FF2D8A", "#FFB020", "#1F6BFF"],
-  neon: ["#7C3AED", "#1F6BFF", "#FF2D8A", "#B9E824"],
-  floresta: ["#12A150", "#B9E824", "#1F6BFF", "#FFB020"],
-  brasa: ["#E64A00", "#FF5A0A", "#FFB020", "#FF2D8A"],
+  cobalto: ["#2B4EFF", "#E11D74", "#F59E0B", "#7C3AED"],
+  neon: ["#7C3AED", "#2563EB", "#E11D74", "#B9E824"],
+  floresta: ["#0F9D6E", "#B9E824", "#2563EB", "#F59E0B"],
+  magenta: ["#E11D74", "#7C3AED", "#2B4EFF", "#B9E824"],
 };
 
 const SLOTS = [
@@ -21,12 +21,12 @@ export default function AuroraDemo() {
   const [blobs, setBlobs] = useState(4);
   const [blur, setBlur] = useState(80);
   const [speed, setSpeed] = useState(28);
-  const [palette, setPalette] = useState("tangerina");
+  const [palette, setPalette] = useState("cobalto");
   const [dark, setDark] = useState(true);
   const [running, setRunning] = useState(true);
   const [grain, setGrain] = useState(true);
 
-  const colors = PALETTES[palette] ?? PALETTES.tangerina!;
+  const colors = PALETTES[palette] ?? PALETTES.cobalto!;
 
   return (
     <DemoLayout
@@ -39,7 +39,7 @@ export default function AuroraDemo() {
       }
       stage={
         <Stage dark={dark} className="p-0">
-          <div className={`relative min-h-[420px] overflow-hidden contain-paint ${dark ? "bg-night" : "bg-tangerine-soft"}`}>
+          <div className={`relative min-h-[420px] overflow-hidden contain-paint ${dark ? "bg-night" : "bg-accent-soft"}`}>
             <div className="pointer-events-none absolute inset-0" aria-hidden="true">
               {SLOTS.slice(0, blobs).map((slot, index) => (
                 <span
@@ -103,10 +103,10 @@ export default function AuroraDemo() {
             value={palette}
             onChange={setPalette}
             options={[
-              { id: "tangerina", label: "Tangerina" },
+              { id: "cobalto", label: "Cobalto" },
               { id: "neon", label: "Neon" },
               { id: "floresta", label: "Floresta" },
-              { id: "brasa", label: "Brasa" },
+              { id: "magenta", label: "Magenta" },
             ]}
           />
           <Toggle label="Fundo escuro" checked={dark} onChange={setDark} />
@@ -118,7 +118,7 @@ export default function AuroraDemo() {
               setBlobs(4);
               setBlur(80);
               setSpeed(28);
-              setPalette("tangerina");
+              setPalette("cobalto");
               setDark(true);
               setRunning(true);
               setGrain(true);

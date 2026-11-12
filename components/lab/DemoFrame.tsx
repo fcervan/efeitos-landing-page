@@ -26,9 +26,9 @@ export default function DemoFrame({ slug, code, name, cost }: Props) {
     <section aria-label={`Demonstração de ${name}`} className="mt-10">
       <div className="flex flex-wrap items-center justify-between gap-3 rounded-t-card border border-b-0 border-line bg-white px-5 py-4">
         <div className="flex flex-wrap items-center gap-3">
-          <span className="inline-flex items-center gap-2 font-mono text-[11px] font-bold uppercase tracking-[0.16em] text-tangerine-dark">
+          <span className="inline-flex items-center gap-2 font-mono text-[11px] font-bold uppercase tracking-[0.16em] text-accent-dark">
             <span className="relative flex h-2 w-2" aria-hidden="true">
-              <span className="absolute inline-flex h-full w-full rounded-full bg-tangerine opacity-70" />
+              <span className="absolute inline-flex h-full w-full rounded-full bg-accent opacity-70" />
             </span>
             demo ao vivo · {code}
           </span>
@@ -40,7 +40,7 @@ export default function DemoFrame({ slug, code, name, cost }: Props) {
         <button
           type="button"
           onClick={() => setNonce((value) => value + 1)}
-          className="inline-flex items-center gap-2 rounded-pill border border-line bg-mist px-4 py-2 text-[13px] font-semibold text-ink transition-colors duration-300 hover:border-tangerine/50 hover:text-tangerine-dark"
+          className="inline-flex items-center gap-2 rounded-pill border border-line bg-mist px-4 py-2 text-[13px] font-semibold text-ink transition-colors duration-300 hover:border-accent/50 hover:text-accent-dark"
         >
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
             <path

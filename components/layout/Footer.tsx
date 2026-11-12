@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <footer className="on-dark relative overflow-hidden bg-night text-white">
       <div
-        className="pointer-events-none absolute -left-24 -top-32 h-[320px] w-[320px] rounded-full bg-tangerine/25 blur-[90px]"
+        className="pointer-events-none absolute -left-24 -top-32 h-[320px] w-[320px] rounded-full bg-accent/25 blur-[90px]"
         aria-hidden="true"
       />
       <div
@@ -48,7 +48,7 @@ export default function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-[15px] text-white/80 transition-colors duration-300 hover:text-tangerine-light"
+                    className="text-[15px] text-white/80 transition-colors duration-300 hover:text-accent-light"
                   >
                     {item.label}
                   </Link>
@@ -64,7 +64,7 @@ export default function Footer() {
                 <li key={category}>
                   <Link
                     href={`/lab?categoria=${category}`}
-                    className="text-[15px] text-white/80 transition-colors duration-300 hover:text-tangerine-light"
+                    className="text-[15px] text-white/80 transition-colors duration-300 hover:text-accent-light"
                   >
                     {CATEGORY_LABEL[category]}
                   </Link>

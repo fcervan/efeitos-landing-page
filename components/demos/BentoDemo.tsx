@@ -9,7 +9,7 @@ type Layout = "bento" | "uniforme" | "duas";
 
 const ITEMS = [
   { title: "Bloco largo", text: "col-span-8: o assunto principal ganha área.", span: 8, tone: "bg-night text-white", tall: true },
-  { title: "Coluna estreita", text: "col-span-4 para o dado de apoio.", span: 4, tone: "bg-tangerine-tint text-ink" },
+  { title: "Coluna estreita", text: "col-span-4 para o dado de apoio.", span: 4, tone: "bg-accent-tint text-ink" },
   { title: "Terço", text: "Três blocos iguais fecham a linha.", span: 4, tone: "bg-white text-ink" },
   { title: "Outro terço", text: "Mesma altura, conteúdo diferente.", span: 4, tone: "bg-white text-ink" },
   { title: "Último terço", text: "Sem buraco na grade.", span: 4, tone: "bg-electric/10 text-ink" },

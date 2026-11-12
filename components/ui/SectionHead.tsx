@@ -30,7 +30,7 @@ export default function SectionHead({ slug, title, lead, tone = "light", align =
         <Link
           href={`/lab/${effect.slug}`}
           className={`group inline-flex items-center gap-1 font-mono text-[11px] uppercase tracking-[0.14em] transition-colors duration-300 ${
-            dark ? "text-white/50 hover:text-white" : "text-body hover:text-tangerine-dark"
+            dark ? "text-white/50 hover:text-white" : "text-body hover:text-accent-dark"
           }`}
         >
           ver demo

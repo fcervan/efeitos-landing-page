@@ -9,7 +9,7 @@ const BLOCKS = [
   {
     title: "A roda vira interpolação",
     text: "O Lenis intercepta o delta da roda e transforma em destino. Cada frame caminha uma fração do caminho até lá — por isso a sensação de peso.",
-    color: "from-tangerine/20 to-amber/10",
+    color: "from-accent/20 to-amber/10",
   },
   {
     title: "Um loop, não dois",
@@ -19,7 +19,7 @@ const BLOCKS = [
   {
     title: "O teclado continua nativo",
     text: "Setas, Page Down, Home e End não são sequestrados. A barra de rolagem também continua real — nada de scroll falso com transform no body.",
-    color: "from-magenta/15 to-tangerine/10",
+    color: "from-magenta/15 to-accent/10",
   },
   {
     title: "Desligar é parte do efeito",
@@ -118,12 +118,12 @@ export default function LenisDemo() {
             <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-body">
               container interno · role com a roda
             </span>
-            <span ref={valueRef} className="font-mono text-[12px] font-bold text-tangerine-dark">
+            <span ref={valueRef} className="font-mono text-[12px] font-bold text-accent-dark">
               0 px
             </span>
           </div>
           <div className="h-1 w-full bg-line">
-            <span ref={barRef} className="block h-full origin-left scale-x-0 bg-tangerine" />
+            <span ref={barRef} className="block h-full origin-left scale-x-0 bg-accent" />
           </div>
 
           <div

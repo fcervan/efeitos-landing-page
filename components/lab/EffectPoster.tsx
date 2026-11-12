@@ -7,10 +7,10 @@ type Props = {
 };
 
 const PALETTE: Record<EffectCategory, [string, string, string]> = {
-  scroll: ["#FF5A0A", "#FFB020", "#FF2D8A"],
-  "3d": ["#1F6BFF", "#7C3AED", "#FF2D8A"],
-  estetica: ["#FF2D8A", "#FF5A0A", "#FFB020"],
-  interacao: ["#12A150", "#B9E824", "#1F6BFF"],
+  scroll: ["#2B4EFF", "#F59E0B", "#E11D74"],
+  "3d": ["#2563EB", "#7C3AED", "#E11D74"],
+  estetica: ["#E11D74", "#2B4EFF", "#F59E0B"],
+  interacao: ["#0F9D6E", "#B9E824", "#2563EB"],
 };
 
 /**
@@ -37,7 +37,7 @@ export default function EffectPoster({ code, category, animated }: Props) {
           <stop offset="1" stopColor={c} stopOpacity="0.16" />
         </linearGradient>
         <pattern id={`${id}-d`} width="14" height="14" patternUnits="userSpaceOnUse">
-          <circle cx="1.4" cy="1.4" r="1.4" fill="#111111" fillOpacity="0.09" />
+          <circle cx="1.4" cy="1.4" r="1.4" fill="#0E1116" fillOpacity="0.09" />
         </pattern>
       </defs>
 
@@ -83,7 +83,7 @@ export default function EffectPoster({ code, category, animated }: Props) {
           <path
             d="M160 22 208 48 208 92 160 118 112 92 112 48Z M112 48 160 74 208 48 M160 74 160 118"
             fill="none"
-            stroke="#111111"
+            stroke="#0E1116"
             strokeOpacity="0.35"
             strokeWidth="1.4"
           />
@@ -108,7 +108,7 @@ export default function EffectPoster({ code, category, animated }: Props) {
               style={{ transformOrigin: `${circle.cx}px ${circle.cy}px`, transitionDelay: `${index * 80}ms` }}
             />
           ))}
-          <rect x="24" y="86" width="72" height="8" rx="4" fill="#111111" fillOpacity="0.14" />
+          <rect x="24" y="86" width="72" height="8" rx="4" fill="#0E1116" fillOpacity="0.14" />
         </g>
       ) : null}
 
@@ -130,7 +130,7 @@ export default function EffectPoster({ code, category, animated }: Props) {
           ))}
           <path
             d={`M${168 + seed * 6} 60 l14 34 6-13 13-6z`}
-            fill="#111111"
+            fill="#0E1116"
             fillOpacity="0.75"
             className={animated ? "transition-transform duration-500 ease-out group-hover:translate-x-1 group-hover:translate-y-1" : ""}
           />
@@ -143,7 +143,7 @@ export default function EffectPoster({ code, category, animated }: Props) {
         fontFamily="ui-monospace, monospace"
         fontSize="13"
         fontWeight="700"
-        fill="#111111"
+        fill="#0E1116"
         fillOpacity="0.5"
       >
         {code}

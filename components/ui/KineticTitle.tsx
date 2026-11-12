@@ -60,7 +60,7 @@ export default function KineticTitle({
         {words.map((word, index) => (
           <span key={`${word.text}-${index}`} className="mask-word">
             <motion.span
-              className={`inline-block ${word.accent ? "text-tangerine" : ""}`}
+              className={`inline-block ${word.accent ? "text-accent" : ""}`}
               initial={reduce ? false : { y: "110%" }}
               {...(inView && !reduce
                 ? { whileInView: { y: "0%" }, viewport: { once: true, margin: "-80px" } }

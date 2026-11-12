@@ -9,19 +9,19 @@ const PANELS = [
     tag: "sem sticky",
     title: "Tudo rola junto",
     text: "O texto e a imagem sobem na mesma velocidade. Para comparar dois estados, o leitor precisa voltar a rolagem — e perde a referência.",
-    color: "#FF5A0A",
+    color: "#2B4EFF",
   },
   {
     tag: "com sticky",
     title: "O palco fica, o texto anda",
     text: "position: sticky prende o palco dentro do wrapper. Cada bloco de texto que passa troca o estado da comparação, sem uma linha de GSAP.",
-    color: "#1F6BFF",
+    color: "#2563EB",
   },
   {
     tag: "quando trocar",
     title: "Sticky até precisar de progresso",
     text: "Se você precisa do número do progresso (0 a 1) para animar, aí sim vale o pin do ScrollTrigger. Até lá, CSS resolve com custo zero de JS.",
-    color: "#12A150",
+    color: "#0F9D6E",
   },
 ];
 
@@ -76,7 +76,7 @@ export default function StickyDemo() {
             <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-body">
               position: sticky · CSS puro
             </span>
-            <span className="font-mono text-[12px] font-bold text-tangerine-dark">
+            <span className="font-mono text-[12px] font-bold text-accent-dark">
               bloco {active + 1}/{PANELS.length}
             </span>
           </div>
@@ -126,7 +126,7 @@ export default function StickyDemo() {
                       blockRefs.current[index] = node;
                     }}
                     className={`mb-6 rounded-card border p-5 ${
-                      guides ? "border-dashed border-tangerine/40 bg-tangerine-soft/60" : "border-line bg-mist"
+                      guides ? "border-dashed border-accent/40 bg-accent-soft/60" : "border-line bg-mist"
                     }`}
                     style={{ minHeight: STAGE_HEIGHT * 0.6 }}
                   >

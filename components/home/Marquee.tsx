@@ -34,7 +34,7 @@ export default function Marquee() {
                   key={`${copy}-${item}`}
                   className="flex shrink-0 items-center gap-2 rounded-pill border border-white/12 bg-white/[0.04] px-5 py-2.5 text-[14px] font-semibold text-white/80"
                 >
-                  <span className="h-1.5 w-1.5 rounded-full bg-tangerine" aria-hidden="true" />
+                  <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
                   {item}
                 </li>
               ))}

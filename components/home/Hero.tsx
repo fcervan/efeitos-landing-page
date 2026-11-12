@@ -28,7 +28,7 @@ const FACTS = [
 ];
 
 const MOCK_LINES = [
-  { width: "82%", color: "bg-tangerine" },
+  { width: "82%", color: "bg-accent" },
   { width: "58%", color: "bg-magenta" },
   { width: "70%", color: "bg-electric" },
 ];
@@ -37,7 +37,7 @@ export default function Hero() {
   const reduce = useReducedMotion();
 
   return (
-    <section className="relative overflow-hidden bg-tangerine-soft pb-20 pt-[104px] sm:pt-[128px]">
+    <section className="relative overflow-hidden bg-accent-soft pb-20 pt-[104px] sm:pt-[128px]">
       <Aurora tone="warm" blur={90} />
       <div className="pointer-events-none absolute inset-0 dotgrid opacity-[0.35]" aria-hidden="true" />
       <div
@@ -56,14 +56,14 @@ export default function Hero() {
           >
             <Link
               href="/lab"
-              className="inline-flex items-center gap-2 rounded-pill border border-tangerine/25 bg-white/80 px-3.5 py-1.5 font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-tangerine-dark backdrop-blur-sm transition-colors duration-300 hover:border-tangerine/60"
+              className="inline-flex items-center gap-2 rounded-pill border border-accent/25 bg-white/80 px-3.5 py-1.5 font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-accent-dark backdrop-blur-sm transition-colors duration-300 hover:border-accent/60"
             >
               TÉCNICA · KINETIC TYPOGRAPHY
               <span aria-hidden="true">→</span>
             </Link>
             <Link
               href="/lab/kinetic-typography"
-              className="font-mono text-[11px] uppercase tracking-[0.14em] text-body underline decoration-tangerine/40 underline-offset-4 transition-colors hover:text-tangerine-dark"
+              className="font-mono text-[11px] uppercase tracking-[0.14em] text-body underline decoration-accent/40 underline-offset-4 transition-colors hover:text-accent-dark"
             >
               ver demo
             </Link>
@@ -145,7 +145,7 @@ export default function Hero() {
                 >
                   <div className="flex items-center justify-between gap-3">
                     <span className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.16em] text-white/60">
-                      <span className="rounded-md bg-tangerine px-1.5 py-0.5 font-bold text-white">
+                      <span className="rounded-md bg-accent px-1.5 py-0.5 font-bold text-white">
                         A5
                       </span>
                       kinetic typography
@@ -165,9 +165,9 @@ export default function Hero() {
 
                   <div className="mt-6 rounded-2xl border border-white/10 bg-white/[0.04] p-3.5">
                     <p className="font-mono text-[11px] leading-relaxed text-white/70">
-                      <span className="text-tangerine-light">prompt</span> crie kinetic typography no
+                      <span className="text-accent-light">prompt</span> crie kinetic typography no
                       hero: palavras reveladas por máscara com stagger
-                      <span className="ml-0.5 inline-block h-3 w-1.5 translate-y-0.5 bg-tangerine" />
+                      <span className="ml-0.5 inline-block h-3 w-1.5 translate-y-0.5 bg-accent" />
                     </p>
                   </div>
 
@@ -187,9 +187,9 @@ export default function Hero() {
                       />
                       <defs>
                         <linearGradient id="heroSpark" x1="0" y1="0" x2="104" y2="0">
-                          <stop stopColor="#FF5A0A" />
-                          <stop offset="0.55" stopColor="#FF2D8A" />
-                          <stop offset="1" stopColor="#1F6BFF" />
+                          <stop stopColor="#2B4EFF" />
+                          <stop offset="0.55" stopColor="#E11D74" />
+                          <stop offset="1" stopColor="#2563EB" />
                         </linearGradient>
                       </defs>
                     </svg>
@@ -222,13 +222,13 @@ export default function Hero() {
                 >
                   <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-body">alvo</p>
                   <p className="text-xl font-extrabold leading-none text-ink">
-                    60<span className="text-tangerine">fps</span>
+                    60<span className="text-accent">fps</span>
                   </p>
                   <div className="mt-2 flex items-end gap-[3px]" aria-hidden="true">
                     {[10, 16, 12, 18, 14, 20, 17].map((height, index) => (
                       <span
                         key={index}
-                        className="w-[4px] rounded-sm bg-tangerine/70"
+                        className="w-[4px] rounded-sm bg-accent/70"
                         style={{ height }}
                       />
                     ))}
@@ -241,7 +241,7 @@ export default function Hero() {
                   style={{
                     transform: "translateZ(110px)",
                     background:
-                      "radial-gradient(circle at 32% 28%, #FFB08A, #FF5A0A 45%, #E64A00 78%)",
+                      "radial-gradient(circle at 32% 28%, #9DB0FF, #2B4EFF 45%, #1D3ACC 78%)",
                   }}
                   aria-hidden="true"
                 />

@@ -2,21 +2,21 @@ type Tone = "warm" | "night" | "cool";
 
 const TONES: Record<Tone, string[]> = {
   warm: [
-    "radial-gradient(circle at 30% 30%, rgba(255,90,10,0.55), transparent 68%)",
-    "radial-gradient(circle at 60% 40%, rgba(255,45,138,0.38), transparent 66%)",
-    "radial-gradient(circle at 40% 60%, rgba(255,176,32,0.45), transparent 70%)",
-    "radial-gradient(circle at 50% 50%, rgba(31,107,255,0.28), transparent 68%)",
+    "radial-gradient(circle at 30% 30%, rgba(43,78,255,0.55), transparent 68%)",
+    "radial-gradient(circle at 60% 40%, rgba(225,29,116,0.34), transparent 66%)",
+    "radial-gradient(circle at 40% 60%, rgba(245,158,11,0.34), transparent 70%)",
+    "radial-gradient(circle at 50% 50%, rgba(124,58,237,0.28), transparent 68%)",
   ],
   night: [
-    "radial-gradient(circle at 30% 30%, rgba(255,90,10,0.55), transparent 66%)",
+    "radial-gradient(circle at 30% 30%, rgba(43,78,255,0.55), transparent 66%)",
     "radial-gradient(circle at 60% 40%, rgba(124,58,237,0.5), transparent 66%)",
-    "radial-gradient(circle at 40% 60%, rgba(31,107,255,0.42), transparent 70%)",
-    "radial-gradient(circle at 50% 50%, rgba(255,45,138,0.32), transparent 68%)",
+    "radial-gradient(circle at 40% 60%, rgba(37,99,235,0.40), transparent 70%)",
+    "radial-gradient(circle at 50% 50%, rgba(225,29,116,0.30), transparent 68%)",
   ],
   cool: [
-    "radial-gradient(circle at 30% 30%, rgba(31,107,255,0.42), transparent 68%)",
-    "radial-gradient(circle at 60% 40%, rgba(185,232,36,0.32), transparent 66%)",
-    "radial-gradient(circle at 40% 60%, rgba(255,90,10,0.34), transparent 70%)",
+    "radial-gradient(circle at 30% 30%, rgba(37,99,235,0.40), transparent 68%)",
+    "radial-gradient(circle at 60% 40%, rgba(185,232,36,0.26), transparent 66%)",
+    "radial-gradient(circle at 40% 60%, rgba(43,78,255,0.34), transparent 70%)",
     "radial-gradient(circle at 50% 50%, rgba(124,58,237,0.3), transparent 68%)",
   ],
 };

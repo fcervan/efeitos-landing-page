@@ -32,7 +32,7 @@ export default function DemoSoon({ code, name, summary, deps }: Props) {
           <div className="relative grid min-h-[420px] place-items-center overflow-hidden bg-night p-8 text-center">
             <div className="pointer-events-none absolute inset-0" aria-hidden="true">
               <span
-                className="absolute -left-[10%] -top-[20%] h-72 w-72 rounded-full bg-tangerine/30 blur-[70px] animate-driftA"
+                className="absolute -left-[10%] -top-[20%] h-72 w-72 rounded-full bg-accent/30 blur-[70px] animate-driftA"
                 style={{ animationPlayState: motion ? "running" : "paused" }}
               />
               <span
@@ -47,7 +47,7 @@ export default function DemoSoon({ code, name, summary, deps }: Props) {
 
             <div className="relative max-w-md">
               <span className="inline-flex items-center gap-2 rounded-pill border border-white/15 bg-white/5 px-3 py-1 font-mono text-[11px] font-bold uppercase tracking-[0.16em] text-white/70">
-                <span className="h-1.5 w-1.5 rounded-full bg-tangerine" aria-hidden="true" />
+                <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
                 demo em construção
               </span>
 

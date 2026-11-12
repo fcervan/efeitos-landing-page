@@ -9,7 +9,7 @@ const STEPS = [
     text: "No índice você cruza categoria e custo. Se o alvo é celular mediano, comece pelos leves e deixe o 3D para uma rota dedicada.",
     href: "/lab?custo=leve",
     cta: "Ver só os leves",
-    accent: "text-tangerine",
+    accent: "text-accent",
   },
   {
     n: "02",
@@ -53,7 +53,7 @@ export default function Steps() {
             <Reveal as="li" key={step.n} delay={index * 0.08} className="h-full">
               <div className="relative flex h-full flex-col rounded-card border border-line bg-white p-6 shadow-card">
                 <span
-                  className="absolute inset-x-6 top-0 h-[3px] rounded-b bg-gradient-to-r from-tangerine via-magenta to-electric"
+                  className="absolute inset-x-6 top-0 h-[3px] rounded-b bg-gradient-to-r from-accent via-magenta to-electric"
                   aria-hidden="true"
                 />
                 <span className={`font-mono text-[42px] font-extrabold leading-none ${step.accent}`}>

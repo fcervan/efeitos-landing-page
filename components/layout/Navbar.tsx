@@ -65,7 +65,7 @@ export default function Navbar() {
       >
         <nav className="wrap flex h-[72px] items-center justify-between gap-4" aria-label="Principal">
           <Link href="/" className="group flex items-center gap-2.5" aria-label="Efeitos Landing Page, página inicial">
-            <span className="relative grid h-9 w-9 place-items-center rounded-[12px] bg-tangerine text-white shadow-cta">
+            <span className="relative grid h-9 w-9 place-items-center rounded-[12px] bg-accent text-white shadow-cta">
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
                 <path
                   d="M2 12.5c2.6 0 2.6-7 5.2-7s2.6 7 5.2 7c1.3 0 1.95-1.75 2.6-3.5"
@@ -76,7 +76,7 @@ export default function Navbar() {
               </svg>
             </span>
             <span className="text-[17px] font-extrabold tracking-tight">
-              Efeitos Landing Page<span className="text-tangerine">.</span>
+              Efeitos Landing Page<span className="text-accent">.</span>
             </span>
           </Link>
 
@@ -87,14 +87,14 @@ export default function Navbar() {
                   href={link.href}
                   aria-current={isActive(link.href) ? "page" : undefined}
                   className={`relative rounded-pill px-3.5 py-2 text-sm font-semibold transition-colors duration-300 ${
-                    isActive(link.href) ? "text-tangerine-dark" : "text-body hover:text-ink"
+                    isActive(link.href) ? "text-accent-dark" : "text-body hover:text-ink"
                   }`}
                 >
                   {link.label}
                   {isActive(link.href) ? (
                     <motion.span
                       layoutId="nav-active"
-                      className="absolute inset-0 -z-10 rounded-pill bg-tangerine-tint"
+                      className="absolute inset-0 -z-10 rounded-pill bg-accent-tint"
                       transition={{ type: "spring", stiffness: 320, damping: 28 }}
                     />
                   ) : null}
@@ -139,7 +139,7 @@ export default function Navbar() {
 
         <div className="relative h-[2px] w-full bg-line/70" aria-hidden="true">
           <motion.div
-            className="h-full origin-left bg-gradient-to-r from-tangerine via-magenta to-electric"
+            className="h-full origin-left bg-gradient-to-r from-accent via-magenta to-electric"
             style={{ scaleX: reduce ? scrollYProgress : progress }}
           />
         </div>
@@ -166,7 +166,7 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     className={`flex items-center justify-between rounded-2xl px-4 py-3 text-[15px] font-semibold ${
-                      isActive(link.href) ? "bg-tangerine-soft text-tangerine-dark" : "text-ink"
+                      isActive(link.href) ? "bg-accent-soft text-accent-dark" : "text-ink"
                     }`}
                   >
                     {link.label}

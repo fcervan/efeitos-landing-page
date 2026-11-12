@@ -33,14 +33,14 @@ export default function LabPage() {
       <section className="relative overflow-hidden border-b border-line bg-mist py-16 sm:py-20">
         <div className="pointer-events-none absolute inset-0 dotgrid opacity-40" aria-hidden="true" />
         <div
-          className="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full bg-tangerine/20 blur-[80px]"
+          className="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full bg-accent/20 blur-[80px]"
           aria-hidden="true"
         />
         <div className="wrap relative">
           <nav aria-label="Trilha" className="mb-6">
             <Link
               href="/"
-              className="font-mono text-[11px] uppercase tracking-[0.16em] text-body transition-colors hover:text-tangerine-dark"
+              className="font-mono text-[11px] uppercase tracking-[0.16em] text-body transition-colors hover:text-accent-dark"
             >
               ← início
             </Link>
@@ -50,7 +50,7 @@ export default function LabPage() {
             <span aria-hidden="true">◍</span> Laboratório
           </p>
           <h1 className="h1 mt-4 max-w-[18ch]">
-            Efeitos que você pode <span className="text-tangerine">pedir</span> a qualquer LLM.
+            Efeitos que você pode <span className="text-accent">pedir</span> a qualquer LLM.
           </h1>
           <p className="lead mt-5 max-w-2xl">
             Cada demo abre em uma página isolada, com ficha técnica, custo declarado e prompt
@@ -84,7 +84,7 @@ export default function LabPage() {
           <EffectsGrid effects={EFFECTS} />
         </Suspense>
 
-        <div className="mt-14 rounded-card border border-line bg-tangerine-soft p-6 sm:p-8">
+        <div className="mt-14 rounded-card border border-line bg-accent-soft p-6 sm:p-8">
           <h2 className="h3 text-ink">Por que cada demo tem página própria?</h2>
           <p className="lead mt-3 max-w-3xl">
             Porque o custo é por página, não por site. Em uma rota única, loops de animação, seções
@@ -100,7 +100,7 @@ export default function LabPage() {
             ].map((item) => (
               <li key={item.label} className="rounded-2xl border border-white/70 bg-white/70 p-4">
                 <p className="text-[13.5px] font-semibold text-ink">{item.label}</p>
-                <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.12em] text-tangerine-dark">
+                <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.12em] text-accent-dark">
                   {item.value}
                 </p>
               </li>

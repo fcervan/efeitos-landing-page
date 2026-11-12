@@ -34,7 +34,7 @@ export function DemoLayout({
 
 export function PanelTitle({ children }: { children: ReactNode }) {
   return (
-    <h3 className="font-mono text-[11px] font-bold uppercase tracking-[0.16em] text-tangerine-dark">
+    <h3 className="font-mono text-[11px] font-bold uppercase tracking-[0.16em] text-accent-dark">
       {children}
     </h3>
   );
@@ -97,9 +97,9 @@ export function Slider({
         step={step}
         value={value}
         onChange={(event) => onChange(Number(event.target.value))}
-        className="mt-2 h-1.5 w-full cursor-pointer appearance-none rounded-pill bg-line accent-[#FF5A0A] outline-offset-4"
+        className="mt-2 h-1.5 w-full cursor-pointer appearance-none rounded-pill bg-line accent-[#2B4EFF] outline-offset-4"
         style={{
-          background: `linear-gradient(90deg, #FF5A0A ${((value - min) / (max - min)) * 100}%, #EDEDED ${
+          background: `linear-gradient(90deg, #2B4EFF ${((value - min) / (max - min)) * 100}%, #E4E7EC ${
             ((value - min) / (max - min)) * 100
           }%)`,
         }}
@@ -132,7 +132,7 @@ export function Toggle({
         aria-label={label}
         onClick={() => onChange(!checked)}
         className={`relative mt-0.5 h-6 w-11 shrink-0 rounded-pill border transition-colors duration-300 ${
-          checked ? "border-tangerine bg-tangerine" : "border-line bg-mist"
+          checked ? "border-accent bg-accent" : "border-line bg-mist"
         }`}
       >
         <span
@@ -199,7 +199,7 @@ export function SelectRow({
         id={id}
         value={value}
         onChange={(event) => onChange(event.target.value)}
-        className="mt-2 w-full rounded-xl border border-line bg-mist px-3 py-2 text-[13px] font-semibold text-ink focus:border-tangerine/50 focus:bg-white"
+        className="mt-2 w-full rounded-xl border border-line bg-mist px-3 py-2 text-[13px] font-semibold text-ink focus:border-accent/50 focus:bg-white"
       >
         {options.map((option) => (
           <option key={option.id} value={option.id}>
@@ -223,8 +223,8 @@ export function ActionButton({
   ariaLabel?: string;
 }) {
   const styles = {
-    solid: "bg-tangerine text-white hover:bg-tangerine-dark",
-    outline: "border border-line bg-white text-ink hover:border-tangerine/50",
+    solid: "bg-accent text-white hover:bg-accent-dark",
+    outline: "border border-line bg-white text-ink hover:border-accent/50",
     dark: "bg-ink text-white hover:bg-carbon",
   } as const;
   return (

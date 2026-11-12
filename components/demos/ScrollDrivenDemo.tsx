@@ -6,9 +6,9 @@ import { ActionButton, DemoLayout, PanelTitle, Readout, Slider, Stage, Toggle } 
 import { EASE_OUT } from "@/lib/ease";
 
 const CARDS = [
-  { title: "Título revelado", text: "whileInView com once: true — dispara e nunca mais volta.", color: "#FF5A0A" },
-  { title: "Card que sobe", text: "y: 28 → 0 com easing de saída. Um dono por elemento.", color: "#FF2D8A" },
-  { title: "Número contado", text: "Entrada única: o valor final fica no HTML desde o servidor.", color: "#1F6BFF" },
+  { title: "Título revelado", text: "whileInView com once: true — dispara e nunca mais volta.", color: "#2B4EFF" },
+  { title: "Card que sobe", text: "y: 28 → 0 com easing de saída. Um dono por elemento.", color: "#E11D74" },
+  { title: "Número contado", text: "Entrada única: o valor final fica no HTML desde o servidor.", color: "#2563EB" },
   { title: "Selo que aparece", text: "viewport com margin negativa antecipa o disparo.", color: "#7C3AED" },
 ];
 
@@ -46,7 +46,7 @@ export default function ScrollDrivenDemo() {
             <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-body">
               duas famílias, um container
             </span>
-            <motion.span className="font-mono text-[12px] font-bold text-tangerine-dark">
+            <motion.span className="font-mono text-[12px] font-bold text-accent-dark">
               scrub + triggered
             </motion.span>
           </div>
@@ -62,15 +62,15 @@ export default function ScrollDrivenDemo() {
             <div className="relative border-b border-line md:border-b-0 md:border-r">
               <div className="sticky top-0 flex h-[420px] items-center justify-center overflow-hidden">
                 <motion.div
-                  className="absolute h-56 w-56 rounded-[40px] bg-tangerine/12"
+                  className="absolute h-56 w-56 rounded-[40px] bg-accent/12"
                   style={reduce ? undefined : { y: yBack, scale }}
                   aria-hidden="true"
                 />
                 <motion.div
-                  className="relative grid h-32 w-32 place-items-center rounded-[28px] border border-tangerine/30 bg-white shadow-lift"
+                  className="relative grid h-32 w-32 place-items-center rounded-[28px] border border-accent/30 bg-white shadow-lift"
                   style={reduce ? undefined : { y, rotate }}
                 >
-                  <span className="font-mono text-[11px] font-bold uppercase tracking-[0.14em] text-tangerine-dark">
+                  <span className="font-mono text-[11px] font-bold uppercase tracking-[0.14em] text-accent-dark">
                     scrub
                   </span>
                 </motion.div>
@@ -80,7 +80,7 @@ export default function ScrollDrivenDemo() {
                   </p>
                   <div className="h-1.5 overflow-hidden rounded-pill bg-line">
                     <motion.span
-                      className="block h-full origin-left rounded-pill bg-gradient-to-r from-tangerine to-magenta"
+                      className="block h-full origin-left rounded-pill bg-gradient-to-r from-accent to-magenta"
                       style={{ scaleX: progress }}
                     />
                   </div>

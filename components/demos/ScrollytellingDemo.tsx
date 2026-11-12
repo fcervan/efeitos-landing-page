@@ -11,19 +11,19 @@ const STEPS = [
     label: "Escolher",
     title: "O efeito entra pelo custo, não pelo brilho",
     text: "No índice, o selo diz se aquilo cabe no seu orçamento. Um tilt em CSS entrega volume sem contexto de GPU; um shader entrega identidade e cobra por isso.",
-    accent: "#FF5A0A",
+    accent: "#2B4EFF",
   },
   {
     label: "Isolar",
     title: "Uma rota, um componente, um loop",
     text: "A demo monta sozinha. Nada de dividir a tela com outro canvas, outra seção pinada e mais três camadas de blur competindo pelo mesmo frame.",
-    accent: "#FF2D8A",
+    accent: "#E11D74",
   },
   {
     label: "Medir",
     title: "O número vem do build, não do chute",
     text: "First Load JS por rota, coletado depois do next build. É o que permite dizer 'este efeito custa 40 kB' em vez de 'acho que é leve'.",
-    accent: "#1F6BFF",
+    accent: "#2563EB",
   },
   {
     label: "Copiar",
@@ -129,7 +129,7 @@ export default function ScrollytellingDemo() {
             <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-body">
               {pinned ? "role dentro do quadro" : "lista estática"}
             </span>
-            <span className="font-mono text-[12px] font-bold text-tangerine-dark">
+            <span className="font-mono text-[12px] font-bold text-accent-dark">
               passo {active + 1}/{STEPS.length}
             </span>
           </div>
@@ -152,7 +152,7 @@ export default function ScrollytellingDemo() {
                   <div className="relative h-56 w-1 shrink-0 overflow-hidden rounded-pill bg-line">
                     <span
                       ref={barRef}
-                      className="absolute inset-0 origin-top scale-y-0 rounded-pill bg-tangerine"
+                      className="absolute inset-0 origin-top scale-y-0 rounded-pill bg-accent"
                     />
                   </div>
 
@@ -188,7 +188,7 @@ export default function ScrollytellingDemo() {
                             className={`rounded-pill border px-3 py-1.5 text-[12px] font-semibold transition-colors duration-300 ${
                               index === active
                                 ? "border-transparent bg-ink text-white"
-                                : "border-line bg-white text-body hover:border-tangerine/50 hover:text-ink"
+                                : "border-line bg-white text-body hover:border-accent/50 hover:text-ink"
                             }`}
                           >
                             {item.label}

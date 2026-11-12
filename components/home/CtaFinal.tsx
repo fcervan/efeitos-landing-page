@@ -10,7 +10,7 @@ const HIGHLIGHT = bySlug("kinetic-typography");
 
 export default function CtaFinal() {
   return (
-    <section className="relative overflow-hidden bg-tangerine-soft py-20 sm:py-28">
+    <section className="relative overflow-hidden bg-accent-soft py-20 sm:py-28">
       <Aurora tone="warm" blur={95} />
       <div className="wrap relative">
         <div className="mx-auto max-w-3xl text-center">

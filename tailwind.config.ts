@@ -2,9 +2,9 @@ import type { Config } from "tailwindcss";
 
 /**
  * Tokens do Efeitos Landing Page.
- * A paleta nasce do assunto: laranja tangerina (movimento/calor) como família dominante,
- * azul elétrico + magenta + lima como acentos de categoria, e neutros quentes (papel)
- * e frios (night/carbon) separando fundo, superfície e overlay.
+ * A paleta nasce do assunto: azul cobalto (precisão/técnica) como família dominante,
+ * violeta + magenta + lima como acentos de categoria, e neutros frios (papel)
+ * e profundos (night/carbon) separando fundo, superfície e overlay.
  */
 const config: Config = {
   content: [
@@ -15,29 +15,29 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        tangerine: {
-          DEFAULT: "#FF5A0A",
-          light: "#FF7A33",
-          dark: "#E64A00",
-          tint: "#FFE9DC",
-          soft: "#FFF5EE",
+        accent: {
+          DEFAULT: "#2B4EFF",
+          light: "#5C78FF",
+          dark: "#1D3ACC",
+          tint: "#E6EBFF",
+          soft: "#F3F6FF",
         },
-        ink: "#111111",
-        body: "#5C5C5C",
-        mist: "#F7F7F8",
-        line: "#EDEDED",
-        night: "#0B0B0F",
-        carbon: "#15151C",
-        smoke: "#26262F",
-        electric: "#1F6BFF",
-        magenta: "#FF2D8A",
+        ink: "#0E1116",
+        body: "#555B66",
+        mist: "#F5F6F8",
+        line: "#E4E7EC",
+        night: "#070B14",
+        carbon: "#101725",
+        smoke: "#26303F",
+        electric: "#7C3AED",
+        magenta: "#E11D74",
         acid: "#B9E824",
-        amber: "#FFB020",
+        amber: "#F59E0B",
         violet: "#7C3AED",
-        success: "#12A150",
-        warning: "#F5A524",
-        danger: "#E5484D",
-        info: "#2B7FFF",
+        success: "#0F9D6E",
+        warning: "#D97706",
+        danger: "#DC2626",
+        info: "#2563EB",
       },
       fontFamily: {
         sans: ["Poppins", "system-ui", "-apple-system", "Segoe UI", "sans-serif"],
@@ -50,9 +50,9 @@ const config: Config = {
       boxShadow: {
         card: "0 10px 30px rgba(17,17,17,0.06)",
         lift: "0 18px 40px rgba(17,17,17,0.10)",
-        cta: "0 12px 28px rgba(255,90,10,0.35)",
-        glow: "0 0 0 1px rgba(255,90,10,0.35), 0 18px 60px rgba(255,90,10,0.22)",
-        glass: "inset 0 1px 0 rgba(255,255,255,0.35), 0 20px 50px rgba(11,11,15,0.35)",
+        cta: "0 12px 28px rgba(43,78,255,0.32)",
+        glow: "0 0 0 1px rgba(43,78,255,0.32), 0 18px 60px rgba(43,78,255,0.20)",
+        glass: "inset 0 1px 0 rgba(255,255,255,0.35), 0 20px 50px rgba(7,11,20,0.35)",
       },
       maxWidth: {
         wrap: "1200px",

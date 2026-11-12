@@ -2,8 +2,8 @@ import { COST_LABEL, type EffectCost } from "@/lib/effects";
 
 const STYLES: Record<EffectCost, string> = {
   leve: "border-success/30 bg-success/10 text-[#0B7A3B]",
-  medio: "border-amber/45 bg-amber/15 text-[#8A5200]",
-  pesado: "border-magenta/30 bg-magenta/10 text-[#B01160]",
+  medio: "border-amber/45 bg-amber/15 text-[#92400E]",
+  pesado: "border-magenta/30 bg-magenta/10 text-[#9D174D]",
 };
 
 const BARS: Record<EffectCost, number> = { leve: 1, medio: 2, pesado: 3 };

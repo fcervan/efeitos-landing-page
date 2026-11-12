@@ -112,7 +112,7 @@ export default function CtaStats() {
                   >
                     {numberBR(stat.value)}
                   </span>
-                  <span className="text-tangerine">{stat.suffix}</span>
+                  <span className="text-accent">{stat.suffix}</span>
                 </p>
                 <p className="mt-3 text-[15px] font-semibold text-white/85">{stat.label}</p>
                 <p className="mt-1 text-[13px] text-white/45">{stat.note}</p>

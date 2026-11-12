@@ -206,7 +206,7 @@ export const EFFECTS: Effect[] = [
       "<Canvas dpr={[1, 1.75]} frameloop={ativo ? 'always' : 'demand'}> com OrbitControls de drei.",
       "Geometria e materiais em useMemo; nada de new Material dentro de useFrame.",
       "IntersectionObserver + visibilitychange decidem se o loop roda.",
-      "Luzes: key tangerina, rim azul elétrico, fill magenta, fog para profundidade.",
+      "Luzes: key cobalto, rim violeta, fill magenta, fog para profundidade.",
     ],
     care: [
       "Um contexto WebGL por página. Vários canvases disputam memória de GPU e o navegador começa a descartar contextos.",
@@ -253,7 +253,7 @@ export const EFFECTS: Effect[] = [
     prompt:
       "Aplique um shader GLSL de distorção que reage ao cursor: plano em tela cheia com THREE.ShaderMaterial (ou shaderMaterial do drei), uniforms uTime, uPointer e uResolution, ruído simplex 2D/3D no fragment shader para o padrão orgânico e smoothstep para as bordas. Atualize uPointer com interpolação (lerp) para o movimento ficar macio. Carregue com next/dynamic ssr: false, ofereça fallback em CSS (gradiente estático) quando WebGL não existir ou prefers-reduced-motion estiver ativo, e pause o loop fora da viewport.",
     what:
-      "Um programa que roda por pixel na GPU. Aqui, um campo de ruído simplex que se dobra em torno do cursor e mistura tangerina, magenta e azul elétrico.",
+      "Um programa que roda por pixel na GPU. Aqui, um campo de ruído simplex que se dobra em torno do cursor e mistura cobalto, magenta e violeta.",
     when:
       "Identidade visual muito específica, fundos líquidos, transições de imagem. Quando não precisa reagir ao usuário, um vídeo é mais barato e mais fácil de manter.",
     how: [
@@ -418,7 +418,7 @@ export const EFFECTS: Effect[] = [
     deps: [],
     summary: "Brilho radial que segue o cursor e acende a borda dos cards no escuro.",
     prompt:
-      "Crie uma seção escura com spotlight que segue o cursor: no pointermove do card, escreva --mx e --my em px via requestAnimationFrame (um único RAF pendente por elemento). O overlay usa radial-gradient(420px circle at var(--mx) var(--my), rgba(255,90,10,.22), transparent 70%) com opacity em transição curta. Para a borda iluminada, use um pseudo-elemento com o mesmo gradiente e mask em modo exclude. Em toque, use posição fixa; em prefers-reduced-motion, deixe o brilho estático. Remova o listener no cleanup.",
+      "Crie uma seção escura com spotlight que segue o cursor: no pointermove do card, escreva --mx e --my em px via requestAnimationFrame (um único RAF pendente por elemento). O overlay usa radial-gradient(420px circle at var(--mx) var(--my), rgba(43,78,255,.20), transparent 70%) com opacity em transição curta. Para a borda iluminada, use um pseudo-elemento com o mesmo gradiente e mask em modo exclude. Em toque, use posição fixa; em prefers-reduced-motion, deixe o brilho estático. Remova o listener no cleanup.",
     what:
       "Fundo quase preto, cards escuros e um facho de luz que acompanha o cursor, revelando bordas e textura só onde você aponta.",
     when:
@@ -427,7 +427,7 @@ export const EFFECTS: Effect[] = [
       "pointermove no card → getBoundingClientRect → setProperty('--mx'/'--my').",
       "Atualização agrupada em requestAnimationFrame, cancelado no cleanup.",
       "Overlay radial com opacity 0→1 no hover; borda com mask exclude.",
-      "Cores do facho vindas da paleta (tangerina + violeta), nunca branco puro.",
+      "Cores do facho vindas da paleta (cobalto + violeta), nunca branco puro.",
     ],
     care: [
       "Sem RAF, cada pointermove escreve estilo e força trabalho de pintura.",
