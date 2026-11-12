@@ -1,0 +1,21 @@
+# Dependências
+node_modules/
+.pnp
+.pnp.js
+
+# Build
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# Ambiente
+.env
+.env*.local
+
+# Sistema / editor
+.DS_Store
+*.log
+npm-debug.log*
+.vscode/
+.idea/
