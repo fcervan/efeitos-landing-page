@@ -64,7 +64,7 @@ export default function Navbar() {
         }`}
       >
         <nav className="wrap flex h-[72px] items-center justify-between gap-4" aria-label="Principal">
-          <Link href="/" className="group flex items-center gap-2.5" aria-label="Cadência, página inicial">
+          <Link href="/" className="group flex items-center gap-2.5" aria-label="Efeitos Landing Page, página inicial">
             <span className="relative grid h-9 w-9 place-items-center rounded-[12px] bg-tangerine text-white shadow-cta">
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
                 <path
@@ -76,7 +76,7 @@ export default function Navbar() {
               </svg>
             </span>
             <span className="text-[17px] font-extrabold tracking-tight">
-              Cadência<span className="text-tangerine">.</span>
+              Efeitos Landing Page<span className="text-tangerine">.</span>
             </span>
           </Link>
 
@@ -103,7 +103,7 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <PillButton href="/lab" size="sm">
               Ver os {EFFECTS.length} efeitos
             </PillButton>

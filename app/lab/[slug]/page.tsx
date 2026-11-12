@@ -20,7 +20,7 @@ export function generateMetadata({ params }: Params): Metadata {
     title: `${effect.code} · ${effect.name}`,
     description: effect.summary,
     openGraph: {
-      title: `${effect.code} · ${effect.name} — Cadência`,
+      title: `${effect.code} · ${effect.name} — Efeitos Landing Page`,
       description: effect.summary,
       locale: "pt_BR",
       type: "article",

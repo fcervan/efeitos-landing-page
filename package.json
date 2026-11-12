@@ -1,8 +1,8 @@
 {
-  "name": "cadencia-motion-lab",
+  "name": "efeitos-landing-page",
   "version": "1.0.0",
   "private": true,
-  "description": "Cadência — home curada, índice de efeitos e demos isoladas com ficha técnica e prompt copiável.",
+  "description": "Efeitos Landing Page — home curada, índice de efeitos e demos isoladas com ficha técnica e prompt copiável.",
   "scripts": {
     "dev": "next dev -H 0.0.0.0 -p 3000",
     "build": "next build",

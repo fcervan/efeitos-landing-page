@@ -1,5 +1,5 @@
 /**
- * REGISTRO — fonte única da verdade do Cadência.
+ * REGISTRO — fonte única da verdade do Efeitos Landing Page.
  * Alimenta: índice /lab, filtros, badges de custo, generateStaticParams,
  * generateMetadata, ficha técnica, prompt copiável e o mapa de demos.
  *

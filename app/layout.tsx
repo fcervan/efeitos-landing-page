@@ -21,8 +21,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "Cadência — laboratório de efeitos de interface",
-    template: "%s — Cadência",
+    default: "Efeitos Landing Page — laboratório de efeitos de interface",
+    template: "%s — Efeitos Landing Page",
   },
   description:
     "Home curada, índice com custo declarado e uma página isolada por efeito, com ficha técnica e prompt copiável. 29 efeitos de scroll, 3D, estética e micro-interação.",
@@ -35,14 +35,14 @@ export const metadata: Metadata = {
     "next.js",
     "laboratório de efeitos",
   ],
-  applicationName: "Cadência",
-  authors: [{ name: "Cadência" }],
+  applicationName: "Efeitos Landing Page",
+  authors: [{ name: "Efeitos Landing Page" }],
   openGraph: {
-    title: "Cadência — laboratório de efeitos de interface",
+    title: "Efeitos Landing Page — laboratório de efeitos de interface",
     description: `${EFFECTS.length} efeitos com demo isolada, custo medido e prompt pronto para colar em qualquer LLM.`,
     locale: "pt_BR",
     type: "website",
-    siteName: "Cadência",
+    siteName: "Efeitos Landing Page",
   },
 };
 

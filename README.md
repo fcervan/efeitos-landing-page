@@ -1,12 +1,12 @@
-# Cadência — laboratório de efeitos de interface
+# Efeitos Landing Page — laboratório de efeitos de interface
 
 Coleção de efeitos de scroll, 3D, estética e micro-interação, cada um em uma página isolada com demo ao vivo, ficha técnica, custo declarado e prompt copiável para colar em qualquer LLM.
 
 [![Deploy](https://github.com/fcervan/efeitos-landing-page/actions/workflows/deploy.yml/badge.svg)](https://github.com/fcervan/efeitos-landing-page/actions/workflows/deploy.yml)
 [![Site](https://img.shields.io/badge/site-ao%20vivo-FF5A0A?style=flat-square&logo=githubpages&logoColor=white)](https://fcervan.github.io/efeitos-landing-page/)
 
-**🔗 Site:** https://fcervan.github.io/efeitos-landing-page/
-**🧪 Índice de efeitos:** https://fcervan.github.io/efeitos-landing-page/lab/
+- **🔗 Site:** https://fcervan.github.io/efeitos-landing-page/
+- **🧪 Índice de efeitos:** https://fcervan.github.io/efeitos-landing-page/lab/
 
 ## Stack
 

@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 /**
- * Tokens do Cadência.
+ * Tokens do Efeitos Landing Page.
  * A paleta nasce do assunto: laranja tangerina (movimento/calor) como família dominante,
  * azul elétrico + magenta + lima como acentos de categoria, e neutros quentes (papel)
  * e frios (night/carbon) separando fundo, superfície e overlay.

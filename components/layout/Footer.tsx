@@ -30,7 +30,7 @@ export default function Footer() {
       <div className="wrap relative py-16">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
-            <p className="eyebrow eyebrow-dark">Cadência · laboratório de movimento</p>
+            <p className="eyebrow eyebrow-dark">Efeitos Landing Page · laboratório de movimento</p>
             <p className="mt-4 max-w-sm text-[15px] leading-relaxed text-white/70">
               Um menu de referência: você vê o efeito funcionando, entende o custo e leva o prompt
               para o seu projeto. Cada demo vive em uma rota isolada — o que é pesado nunca pesa na

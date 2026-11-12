@@ -78,7 +78,7 @@ export default function Hero() {
             transition={{ duration: 0.7, ease: EASE_OUT, delay: 0.55 }}
             data-motion
           >
-            Cadência é um laboratório de interface. Cada efeito tem demo isolada, ficha técnica e o
+            Efeitos Landing Page é um laboratório de interface. Cada efeito tem demo isolada, ficha técnica e o
             prompt pronto para colar em qualquer LLM — com o peso real declarado, medido no build.
           </motion.p>
 
